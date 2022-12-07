@@ -7,8 +7,8 @@
         <img src="{{ asset('img/exhib/' . $exhibition->photo) }}" class="img-show" alt="">
         <h1 class="title__show">{{ $exhibition->name }}</h1>
         <p class="text-bresk text__show"><span class="fw-bold">Описание</span>: {{ $exhibition->description }}</p>
-        <p><span class="fw-bold">Начало мероприятия</span>: {{ $exhibition->date_start }}</p>
-        <p><span class="fw-bold">Окончание мероприятия</span>: {{ $exhibition->date_end }}</p>
+        <p><span class="fw-bold">Начало мероприятия</span>: {{ date("Y-m-d H:i", strtotime($exhibition->date_start)) }}</p>
+        <p><span class="fw-bold">Окончание мероприятия</span>: {{ date("Y-m-d H:i", strtotime($exhibition->date_end))}}</p>
         <p><span class="fw-bold">Адрес</span>: Lorem ipsum dolor sit amet.</p>
         <p><span class="fw-bold">Стоимость билета</span>: {{ $exhibition->price }}&#8381;</p>
         <p><span class="fw-bold">Места</span>: {{ $exhibition->places }}</p>

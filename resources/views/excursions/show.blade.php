@@ -7,8 +7,8 @@
         <img src="{{ asset('img/excurs/' . $excursion->photo) }}" class="img-show" alt="">
         <h1 class="title__show">{{ $excursion->name }}</h1>
         <p class="text-bresk text__show"><span class="fw-bold">Описание</span>: {{ $excursion->description }}</p>
-        <p><span class="fw-bold">Начало мероприятия</span>: {{ $excursion->date_start }}</p>
-        <p><span class="fw-bold">Окончание мероприятия</span>: {{ $excursion->date_end }}</p>
+        <p><span class="fw-bold">Начало мероприятия</span>: {{ date("Y-m-d H:i", strtotime($excursion->date_start)) }}</p>
+        <p><span class="fw-bold">Окончание мероприятия</span>: {{ date("Y-m-d H:i", strtotime($excursion->date_end)) }}</p>
         <p><span class="fw-bold">Стоимость билета</span>: {{ $excursion->price }}&#8381;</p>
         <p><span class="fw-bold">Места</span>: {{ $excursion->places }}</p>
         <p><span class="fw-bold">Статус</span>: <span class="badge text-bg-success">{{ $excursion->status->name }}</span></p>

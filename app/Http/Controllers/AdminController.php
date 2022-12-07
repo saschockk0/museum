@@ -63,6 +63,16 @@ class AdminController extends Controller
 
     }
 
+    public function deleteExcurs($id, Excursion $excursion) {
+        $excursion = $excursion->find($id);
+
+        if($excursion != Null) {
+            dd($excursion);
+        }
+        else
+            abort(404);
+    }
+
     public function createExhib()
     {
         $data = request()->validate([
