@@ -20,7 +20,7 @@ return new class extends Migration
             $table->dateTime('date_start');
             $table->dateTime('date_end');
             $table->integer('places');
-            $table->decimal('price', 13, 3)->unsigned();
+            $table->decimal('price', 13, 0)->unsigned();
             $table->bigInteger('status_id')->unsigned()->default(1);
             $table->string('photo');
             $table->timestamps();
