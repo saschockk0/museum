@@ -10,7 +10,7 @@ class ConfirmPasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
-    | Confirm Password Controller
+    | Confirm Paskhbsword Controller
     |--------------------------------------------------------------------------
     |
     | This controller is responsible for handling password confirmations and
